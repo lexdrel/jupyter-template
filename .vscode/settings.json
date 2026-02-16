@@ -18,8 +18,8 @@
     "ruff.format.enabled": true,
     // Arreglar errores y ordenar imports en guardado
     "editor.codeActionsOnSave": {
-        "source.fixAll": true,
-        "source.organizeImports": true
+        "source.fixAll": "explicit",
+        "source.organizeImports": "explicit"
     },
     // === JUPYTER ===
     "jupyter.askForKernelRestart": false,
