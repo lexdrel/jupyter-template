@@ -6,7 +6,9 @@ This repository is a GitHub template designed to provide a ready-to-use developm
 
 *   **Jupyter Notebook Environment**: Pre-configured Jupyter Data Science Notebook image.
 *   **VS Code Integration**: Seamless development within VS Code using the Dev Containers extension.
-*   **Makefile Utility**: Easy command to retrieve the Jupyter Notebook connection token.
+*   **Makefile Utility**: Easy command to manage tokens, installation, and tests.
+*   **Code Quality**: Integrated with Ruff, Black, and Vulture for clean and efficient code.
+*   **Testing**: Ready-to-use testing environment with Pytest.
 *   **Reproducible Environment**: Consistent setup across different machines using Docker.
 
 ## Prerequisites
@@ -91,10 +93,44 @@ To access the Jupyter Notebook interface in your browser, you need the connectio
 
 4.  **Ctrl+Click** (or **Cmd+Click** on macOS) the link starting with `http://127.0.0.1:8888/?token=...` to open Jupyter Notebook in your default browser.
 
+## Development Workflow
+
+This template includes a set of tools to ensure code quality and reliability.
+
+### 1. Install Dependencies
+
+To install the required packages (including linters and testing tools), run:
+
+```bash
+make install
+```
+
+### 2. Run Linters
+
+We use a combination of tools to maintain code quality:
+*   **Black**: Code formatter.
+*   **Ruff**: Fast Python linter.
+*   **Vulture**: Dead code analysis.
+
+To run all linters at once:
+
+```bash
+make lints
+```
+
+### 3. Run Tests
+
+We use **pytest** for testing. To run your test suite:
+
+```bash
+make test
+```
+
 ## Project Structure
 
 *   `.devcontainer/`: Configuration files for the VS Code Dev Container.
 *   `notebooks/`: Directory to store your Jupyter Notebooks (`.ipynb`). **This folder is mounted to the container, so your work is persisted.**
+*   `tests/`: Directory for automated tests.
 *   `docker-compose.yml`: Defines the services and configuration for the Docker container.
 *   `Makefile`: Helper commands for the project.
 

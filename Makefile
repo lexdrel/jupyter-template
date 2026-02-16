@@ -1,7 +1,7 @@
-.PHONY: token install lints
+.PHONY: token install lints test
 
 # Default target
-all: token install lints
+all: token install lints test
 
 # Target to get the Jupyter Notebook token and connection URL
 token:
@@ -25,3 +25,7 @@ lints:
 	@echo ""
 	@echo "--- Running Ruff (Linter) ---"
 	ruff check .
+
+test:
+	@echo "--- Running Tests ---"
+	export PYTHONPATH=. && pytest tests/ -v
