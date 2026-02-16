@@ -109,3 +109,24 @@ You can customize the environment by:
 *   Modifying `docker-compose.yml` to change the image or add services.
 *   Updating `.devcontainer/devcontainer.json` to add VS Code extensions or settings.
 *   Installing additional Python packages within the notebook or by adding a `requirements.txt` and updating the `postCreateCommand` in `devcontainer.json`.
+
+## Contributing
+
+Contributions are welcome! If you have suggestions or improvements, please fork the repository and create a pull request.
+
+1.  Fork the Project
+2.  Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3.  Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4.  Push to the Branch (`git push origin feature/AmazingFeature`)
+5.  Open a Pull Request
+
+## Show Your Support
+
+If you find this template helpful, please give it a ⭐️ on GitHub!
+
+## Contact
+
+Alex - alex@lexdrel.com
+
+Project Link: [https://github.com/lexdrel/jupyter-template](https://github.com/lexdrel/jupyter-template)
+
