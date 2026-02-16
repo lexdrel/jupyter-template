@@ -23,6 +23,6 @@
     },
     // === JUPYTER ===
     "jupyter.askForKernelRestart": false,
-    "jupyter.interactiveWindowMode": "perFile",
-    "jupyter.notebookFileRoot": "${workspaceFolder}"
+    "jupyter.notebookFileRoot": "${workspaceFolder}",
+    "jupyter.interactiveWindow.creationMode": "perFile"
 }
