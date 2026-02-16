@@ -1,0 +1,15 @@
+# --- Linters ---
+ruff
+
+# --- Autoformat ---
+black
+
+# --- Imports order ---
+isort
+
+# --- Type checking opcional ---
+mypy
+
+# --- Dead code detection ---
+vulture
+

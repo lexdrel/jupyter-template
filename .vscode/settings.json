@@ -1,0 +1,28 @@
+{
+    // === PYTHON ===
+    "python.defaultInterpreterPath": "python",
+    "python.analysis.typeCheckingMode": "basic",
+    // Tamaño de tabulación estándar de Python (PEP 8)
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true, // evitar tabs reales
+    // === FORMATEO ===
+    "editor.formatOnSave": true,
+    "python.formatting.provider": "black",
+    "black-formatter.args": [
+        "--line-length=88"
+    ],
+    // === RUFF (linter + fix) ===
+    "python.linting.enabled": true,
+    "python.linting.ruffEnabled": true,
+    "ruff.enabled": true,
+    "ruff.format.enabled": true,
+    // Arreglar errores y ordenar imports en guardado
+    "editor.codeActionsOnSave": {
+        "source.fixAll": true,
+        "source.organizeImports": true
+    },
+    // === JUPYTER ===
+    "jupyter.askForKernelRestart": false,
+    "jupyter.interactiveWindowMode": "perFile",
+    "jupyter.notebookFileRoot": "${workspaceFolder}"
+}

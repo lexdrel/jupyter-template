@@ -1,0 +1,22 @@
+[tool.black]
+line-length = 88
+target-version = ["py311"]
+skip-string-normalization = false
+
+[tool.ruff]
+line-length = 88
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B"]
+ignore = ["W291", "W293"] # ignora espacios en blanco al final si te molestan
+# extend-exclude removido para poder checkear notebooks/
+
+[tool.ruff.format]
+quote-style = "double"      # comillas dobles
+indent-style = "space"      # espacios, no tabs
+
+[tool.isort]
+profile = "black"
+line_length = 88
+combine_as_imports = true

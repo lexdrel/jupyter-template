@@ -16,7 +16,6 @@ ENV/
 .venv
 
 # IDE
-.vscode/
 .idea/
 *.swp
 *.swo
@@ -34,3 +33,4 @@ build/
 # Miscellaneous
 .env
 .cache/
+.ruff_cache/
