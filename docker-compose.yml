@@ -1,0 +1,52 @@
+
+services:
+  jupyter:
+    image: jupyter/datascience-notebook:latest
+    container_name: Jupyter
+    environment:
+      - JUPYTER_ENABLE_LAB=yes
+    volumes:
+      - "./notebooks:/home/jovyan/work"
+      - ".:/workspace"
+    ports:
+      - "8888:8888"
+    restart: unless-stopped
+
+    # PostgreSQL database service for data persistence and complex queries
+    # Use cases in Jupyter: data analysis, ETL pipelines, storing processed results
+
+    # To enable PostgreSQL, uncomment the following section and ensure you have the necessary resources
+    # ----
+
+    # postgres:
+    #   image: postgres:latest
+    #   container_name: Postgres
+    #   environment:
+    #     - POSTGRES_USER=postgres
+    #     - POSTGRES_PASSWORD=postgres
+    #     - POSTGRES_DB=postgres
+    #   ports:
+    #     - "5432:5432"
+    #   volumes:
+    #     # Persist database data across container restarts
+    #     - "postgres_data:/var/lib/postgresql/data"
+    #   restart: unless-stopped
+    #   # Health check ensures DB is ready before Jupyter queries it
+    #   healthcheck:
+    #     test: ["CMD-SHELL", "pg_isready -U postgres"]
+    #     interval: 10s
+    #     timeout: 5s
+    #     retries: 5
+
+  # Bridge network allows Jupyter to access Postgres via hostname 'postgres'
+  # From Jupyter notebook, connect with: Host=postgres, Port=5432
+
+  # Uncomment the following sections to enable PostgreSQL service and data persistence
+  # -----
+  
+  # volumes:
+  #   postgres_data:
+
+  # networks:
+  #   default:
+  #     driver: bridge

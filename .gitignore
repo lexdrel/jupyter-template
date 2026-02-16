@@ -1,0 +1,36 @@
+# Jupyter Lab
+.jupyter/
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# IPython
+.ipython/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Dependencies
+*.egg-info/
+dist/
+build/
+
+# Miscellaneous
+.env
+.cache/
