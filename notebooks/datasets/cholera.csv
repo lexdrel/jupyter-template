@@ -1,0 +1,24 @@
+region,Property,country,total_cases,imported_cases,deaths,case_fatality_rate,notes
+Asia,0,Afghanistan,33,0,1,3,NaN
+Asia,1,India,385,NaN,3,0.7,NaN
+Asia,2,Iran,634,625,4,0.6,NaN
+Asia,3,Yemen,1032481,0,2261,0.2,NaN
+Asia,4,China,14,NaN,0,0,NaN
+Asia,5,Qatar,5,5,0,0,NaN
+Asia,6,Malaysia,2,0,0,0,NaN
+Asia,7,Nepal,7,NaN,0,0,NaN
+Asia,8,UAE,12,12,0,0,NaN
+Asia,9,Saudi Arabia,5,5,0,0,NaN
+Asia,10,Singapore,3,3,0,0,NaN
+Asia,11,Thailand,8,0,0,0,NaN
+Asia,12,Philippines,134,NaN,2,1.5,NaN
+Asia,13,South Korea,5,5,0,0,NaN
+Asia,14,Japan,7,5,0,0,NaN
+Americas,15,Haiti,13681,0,159,1.2,NaN
+Americas,16,Dominican Republic,122,0,4,3.3,NaN
+Americas,17,Canada,4,3,0,0,NaN
+Americas,18,USA,11,9,0,0,NaN
+Africa,19,All countries,179835,NaN,3220,1.8,no information on imported cases
+Europe,20,All countries,NaN,NaN,,,"no reports in 2017"
+Oceania,21,Australia,3,3,0,0,NaN
+World,22,All countries,1227391,675,5654,0.5,NaN
