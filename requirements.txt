@@ -16,3 +16,9 @@ vulture
 
 # --- Testing ---
 pytest
+
+# --- Graphing ---
+plotly
+
+# --- Interactive widgets ---
+ipywidgets
