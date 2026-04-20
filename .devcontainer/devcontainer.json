@@ -3,6 +3,10 @@
 	"dockerComposeFile": "../docker-compose.yml",
 	"service": "jupyter",
 	"workspaceFolder": "/workspace",
+	"overrideCommand": false,
+	"forwardPorts": [
+		8888
+	],
 	"customizations": {
 		"vscode": {
 			"extensions": [

@@ -1,16 +1,20 @@
-
 services:
   jupyter:
-    image: jupyter/datascience-notebook:latest
+    build:
+      context: .
+      dockerfile: .devcontainer/Dockerfile
     container_name: Jupyter
     environment:
       - JUPYTER_ENABLE_LAB=yes
+      - NB_USER=jovyan
+      - NB_UID=1000
     volumes:
       - "./notebooks:/home/jovyan/work"
       - ".:/workspace"
     ports:
       - "8888:8888"
     restart: unless-stopped
+    command: start-notebook.sh
 
     # PostgreSQL database service for data persistence and complex queries
     # Use cases in Jupyter: data analysis, ETL pipelines, storing processed results
